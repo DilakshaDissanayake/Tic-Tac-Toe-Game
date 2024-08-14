@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/two_color"
+    tools:context=".AddPlayer">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="70dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTER \n USER'S NAME"
+                android:textStyle="bold"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/p1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/slide_border"
+                android:drawableStart="@drawable/x"
+                android:drawablePadding="10dp"
+                android:hint="Enter Player One Name"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="italic"
+
+                tools:ignore="Autofill,DuplicateSpeakableTextCheck,HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/p2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/slide_border"
+                android:drawableStart="@drawable/o"
+                android:drawablePadding="10dp"
+                android:hint="Enter Player two Name"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="italic"
+
+                tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,VisualLintTextFieldSize" />
+
+
+            <Button
+                android:id="@+id/btnStartGame"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="START GAME"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/c3"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
